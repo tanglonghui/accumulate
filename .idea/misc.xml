@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Archer/code/as_workspace/Accumulate/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
+        <entry key="..\:/Users/Archer/code/as_workspace/Accumulate/test/01_anim/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/Archer/code/as_workspace/Accumulate/test/01_anim/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>
@@ -12,5 +14,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>
