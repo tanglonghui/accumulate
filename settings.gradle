@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "Accumulate"
 include ':app'
 include ':lib_main'
+include ':test'
+include ':test:01_anim'
