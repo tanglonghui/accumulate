@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.RenderEffect;
-import android.graphics.Shader;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        overridePendingTransition(R.anim.test_in,R.anim.test_out);
         llRoot = findViewById(R.id.ll_root);
         ivImage = findViewById(R.id.iv_image);
         init = findViewById(R.id.init);
@@ -38,30 +38,36 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.S)
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onStart() {
+        super.onStart();
         testIn2();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //        testIn2();
+    }
+
     private void testIn2() {
-        setBlurImage(ivImage);
+        Log.e("archer ,","getHeight1:"+ivImage.getHeight());
         ivImage.post(new Runnable() {
             @Override
             public void run() {
+                Log.e("archer ,","getHeight2:"+ivImage.getHeight());
                 setBlurImage(ivImage);
             }
         });
     }
 
     private void testIn1() {
-        llRoot.post(new Runnable() {
+        llRoot.postDelayed(new Runnable() {
             @Override
             public void run() {
                 llRoot.setBackgroundColor(getColor(R.color.title_text_color));
             }
-        });
+        },1000);
 //        new Thread(() -> {
 //            try {
 //                Thread.sleep(10);
@@ -75,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        testOut2();
     }
 
     private void testOut2() {
