@@ -4,6 +4,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="Accumulate.app" target="11" />
       <module name="Accumulate.example" target="11" />
+      <module name="Accumulate.example.01_canvas" target="11" />
       <module name="Accumulate.lib_common" target="11" />
       <module name="Accumulate.test" target="11" />
       <module name="Accumulate.test.01_anim" target="11" />
