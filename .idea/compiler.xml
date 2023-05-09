@@ -9,6 +9,7 @@
       <module name="Accumulate.test" target="11" />
       <module name="Accumulate.test.01_anim" target="11" />
       <module name="Accumulate.test.02_lifecycle" target="11" />
+      <module name="Accumulate.test.03_recycle" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
