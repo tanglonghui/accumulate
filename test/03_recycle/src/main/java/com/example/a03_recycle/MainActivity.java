@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 adapter.setDate(getData(new Random().nextInt(12)));
-                Animation animation= new AlphaAnimation(0,1);
+                Animation animation= new AlphaAnimation(0,2);
                 animation.setDuration(3000);
                 rvList.startAnimation(animation);
             }
