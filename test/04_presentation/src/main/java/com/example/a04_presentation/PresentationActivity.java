@@ -11,6 +11,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Optional;
+
 public class PresentationActivity extends AppCompatActivity {
     private Button btnShow;
     private Button btnHide;
@@ -27,7 +29,7 @@ public class PresentationActivity extends AppCompatActivity {
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != myPresentation) {
+                if (null == myPresentation) {
                     initPresentation();
                 } else {
                     myPresentation.show();
