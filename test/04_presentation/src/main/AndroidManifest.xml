@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Accumulate">
         <activity
+            android:name=".PresentationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/Theme.Accumulate.Fullscreen" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
