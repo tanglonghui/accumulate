@@ -12,6 +12,7 @@
       <module name="Accumulate.test.03_recycle" target="11" />
       <module name="Accumulate.test.04_presentation" target="11" />
       <module name="Accumulate.test.05_view" target="11" />
+      <module name="Accumulate.test.06_jni" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
