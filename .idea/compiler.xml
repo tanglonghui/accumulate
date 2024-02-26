@@ -15,6 +15,7 @@
       <module name="Accumulate.test.05_view" target="11" />
       <module name="Accumulate.test.06_jni" target="11" />
       <module name="Accumulate.test.07_insert_photo" target="11" />
+      <module name="Accumulate.test.08_thread_res" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
