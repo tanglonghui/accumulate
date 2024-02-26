@@ -151,15 +151,19 @@ public class MainActivity extends AppCompatActivity {
 
             GLES20.glUseProgram(mProgram);
 
+            // 顶点坐标
             mPositionHandle = GLES20.glGetAttribLocation(mProgram, "vPosition");
+            // 纹理坐标
             mTexCoordHandle = GLES20.glGetAttribLocation(mProgram, "a_texCoord");
             mMatrixHandle = GLES20.glGetUniformLocation(mProgram, "uMVPMatrix");
             mTexSamplerHandle = GLES20.glGetUniformLocation(mProgram, "s_texture");
 
+            // 激活顶点坐标
             GLES20.glEnableVertexAttribArray(mPositionHandle);
             GLES20.glVertexAttribPointer(mPositionHandle, 3, GLES20.GL_FLOAT, false,
                     12, mVertexBuffer);
 
+            // 激活纹理坐标
             GLES20.glEnableVertexAttribArray(mTexCoordHandle);
             GLES20.glVertexAttribPointer(mTexCoordHandle, 2, GLES20.GL_FLOAT, false, 0,
                     mTexVertexBuffer);
@@ -169,7 +173,9 @@ public class MainActivity extends AppCompatActivity {
             mTexName = texNames[0];
             Bitmap bitmap = BitmapFactory.decodeResource(mContext.getResources(),
                     R.drawable.test);
+            // 激活纹理
             GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
+            // 绑定纹理
             GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, mTexName);
             GLES20.glTexParameteri(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER,
                     GLES20.GL_LINEAR);
@@ -195,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
         public void onDrawFrame(GL10 unused) {
             GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
 
+            // 矩阵变换
             GLES20.glUniformMatrix4fv(mMatrixHandle, 1, false, mMVPMatrix, 0);
             GLES20.glUniform1i(mTexSamplerHandle, 0);
 
