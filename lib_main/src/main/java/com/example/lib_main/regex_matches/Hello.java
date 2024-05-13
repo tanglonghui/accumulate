@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class Hello {
     public static void main(String[] args) {
         System.out.println("hello regex_matches");
-        timeRegex();
-
+//        timeRegex();
+        isPhoneNumber();
     }
 
     public static void timeRegex() {
@@ -22,6 +22,19 @@ public class Hello {
             System.out.println("find year:" + matcher.group("year"));
             System.out.println("find month:" + matcher.group("month"));
             System.out.println("find day:" + matcher.group("day"));
+        }
+    }
+
+    public static void isPhoneNumber() {
+        String input = "18312341234";
+        String regex = "^1[3-9]\\d{9}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(input);
+
+        if (matcher.matches()) {
+            System.out.println(input + " isPhoneNumber");
+        } else {
+            System.out.println(input + "is not PhoneNumber");
         }
     }
 }
