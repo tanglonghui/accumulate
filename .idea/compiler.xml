@@ -20,6 +20,7 @@
       <module name="Accumulate.test.09_open_gl" target="11" />
       <module name="Accumulate.test.10_thread_state" target="11" />
       <module name="Accumulate.test.11_calendar" target="11" />
+      <module name="Accumulate.test.12_jni_v" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
