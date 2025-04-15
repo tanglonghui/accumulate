@@ -21,6 +21,7 @@ extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_example_a06_1jni_MainActivity_makeMsg(JNIEnv *env, jobject thiz) {
     // TODO: implement makeMsg()
+    char a[10] = {""};
     jstring ret = env->NewStringUTF("hello world");
     return ret;
 }

@@ -3,24 +3,6 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
       <module name="Accumulate.08_prop" target="11" />
-      <module name="Accumulate.app" target="11" />
-      <module name="Accumulate.example" target="11" />
-      <module name="Accumulate.example.01_canvas" target="11" />
-      <module name="Accumulate.example.02_drawable_xml" target="11" />
-      <module name="Accumulate.lib_common" target="11" />
-      <module name="Accumulate.test" target="11" />
-      <module name="Accumulate.test.01_anim" target="11" />
-      <module name="Accumulate.test.02_lifecycle" target="11" />
-      <module name="Accumulate.test.03_recycle" target="11" />
-      <module name="Accumulate.test.04_presentation" target="11" />
-      <module name="Accumulate.test.05_view" target="11" />
-      <module name="Accumulate.test.06_jni" target="11" />
-      <module name="Accumulate.test.07_insert_photo" target="11" />
-      <module name="Accumulate.test.08_thread_res" target="11" />
-      <module name="Accumulate.test.09_open_gl" target="11" />
-      <module name="Accumulate.test.10_thread_state" target="11" />
-      <module name="Accumulate.test.11_calendar" target="11" />
-      <module name="Accumulate.test.12_jni_v" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

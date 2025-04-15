@@ -1,5 +1,7 @@
 package com.example.a06_jni;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.test);
         textView.setText(makeMsg());
+
+        Bitmap bitmap = BitmapFactory.decodeFile("");
+        bitmap.getColorSpace();
     }
 
     public native String makeMsg();
